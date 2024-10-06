@@ -1,0 +1,12 @@
+
+.cubo {
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-size: 30px;
+}
+.transform:hover {
+    transform: translate(20px);
+}
