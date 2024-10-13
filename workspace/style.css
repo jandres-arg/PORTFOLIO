@@ -12,10 +12,12 @@ body{
     border-bottom-left-radius: 350px;
     border-bottom-right-radius: 350px;
     z-index: -1;
-    right:  0px;
-    top: 0px;
-    width:  29%;
+    right:  0.1px;
+    top: 0.1px;
+    width:  22%;
+ 
 }
+
 #inicio{
     top: 0%;
 }
@@ -27,7 +29,9 @@ nav{
     font-weight: 300;
     font-style: normal;
 }
-
+.container{
+    margin: 0% !important;
+}
 h1{
     font-size: 7rem;
     display:inline-block;
@@ -52,6 +56,12 @@ h1{
 
 }
 
+.prueba {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
 @keyframes dotmovement {
    0% {
     transform:  translate(0);
@@ -72,9 +82,8 @@ h2{
     margin: 20px;
 
 }
-.descripcion{
+.descripcion{  
     width: 65%;
-    
     text-align: justify;
     margin-bottom: 250px;
     margin-left: 20px;
@@ -83,27 +92,43 @@ h2{
     font-weight: 500;
     font-style: italic;
     border-left: ridge 4px chocolate;
-
-    
 }
 
 .dominios {
-    /* background-color: rgba(171, 80, 23, 0.865); */
+    margin-top: 30%;
     display: grid;
-    gap: 10px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat( 3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    text-align: center;
-    color: #fff;
-    font-family: "Rajdhani", sans-serif;
-    font-weight: 600;
-    font-style: italic;
-    font-size: 1,2rem;
     justify-content: space-between;
-    align-items: center;
-
+    column-gap: 0.5%;
+    vertical-align: middle;
   }
 
+
+
+.border {
+    display: grid;
+    justify-items: center;
+}  
+
+.ima {
+    width: 50% !important;
+    margin-top: 10%;
+}
+
+.tex{
+    font-family: "Rajdhani", sans-serif !important;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 2vh;
+    text-align: center;
+    color: #fff;
+   
+
+}
+@media (max-width: 800px) {
+
+}
 
 #dominios>img {
     display: grid;
@@ -138,24 +163,29 @@ h2{
 .ireact {
     width: 130px;
 }
-
-.proyectos>img {
-    width: 250px;
-    padding: 0.5%;
-}
-#proyectos{
-    display: grid;
-    margin-top: 500px;
-
-}
 video {
-    width: 400PX
-    ;
-    height: 400PX
-    ;}
-.javatext {
-    width: 400px;
+    width: 100%;
+    height: 100%;
+    }
+
+.proyectos {
+    margin-top: 30%;
+    display: grid;
+    width: 50px;
+    height: 50px;
+    grid-template-columns: repeat( 2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    column-gap: 0.5%;
+   
+
 }
+.proyectos>img {
+    width: 100%;
+    height: 100%;
+
+}
+
 h3 {
     font-size:2em;
     margin-bottom: 60px;
@@ -169,3 +199,44 @@ h3 {
     color: #fff;
     font-size: 2rem;
 }
+#informacion{
+    display: block;
+}
+
+/* @media (min-width: 500px) {
+    .backg img { 
+        position: absolute;
+        border-bottom-left-radius: 350px;
+        border-bottom-right-radius: 350px;
+        z-index: -1;
+        right:  0.1px;
+        top: 0.1px;
+        width:  10px;
+    }
+    .descripcion {
+        width: 45%;
+        text-align: justify;
+        margin-bottom: 250px;
+        margin-left: 20px;
+        font-size: 1em;
+        font-family: "Rajdhani", sans-serif;
+        font-weight: 500;
+        font-style: italic;
+        border-left: ridge 4px chocolate;
+    }
+    .container { 
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 800px) {
+    .backg img {
+        position: absolute;
+        border-bottom-left-radius: 350px;
+        border-bottom-right-radius: 350px;
+        z-index: -1;
+        right:  0.1px;
+        top: 0.1px;
+        width:  300px;
+    }
+} */
