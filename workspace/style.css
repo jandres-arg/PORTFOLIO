@@ -205,8 +205,11 @@ h3 {
     color: #fff;
 }
 .textoblanco {
-    color: #000000;
+    font-family: "Rajdhani", sans-serif !important;
+    font-weight: 800;
+    font-style: italic;
     font-size: 1rem;
+    color: #000000;
     text-align: center;
 }
 #contacto{
@@ -225,10 +228,17 @@ h3 {
     display: block;
 }
 
-
+@media (max-width: 1200px) {
+    body{
+        background-image: linear-gradient( #fff 25%,#000 29%);
+    }
+    #proyecto{
+        margin-top: 150px;
+    }
+}
 @media (max-width: 800px) {
     body{
-        background-image: linear-gradient( #fff 34%,#000 39%);
+        background-image: linear-gradient( #fff 31%,#000 35%);
     }
 h1{
     font-size: 6rem !important;
